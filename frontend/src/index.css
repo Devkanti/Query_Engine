@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aero-bg: #0d0d0d;
+  --color-aero-panel: #141414;
+  --color-aero-border: #222222;
+  --color-aero-cyan: #00d2ff;
+  --color-aero-emerald: #10b981;
+}
+
+:root {
+  --color-aero-bg: #000000;
+  --color-aero-panel: rgba(255, 255, 255, 0.03);
+  --color-aero-border: rgba(255, 255, 255, 0.08);
+  --color-aero-cyan: #00d2ff;
+  --color-aero-emerald: #10b981;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #000000; /* Pitch Black */
+  color: #d1d5db;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@keyframes float1 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(5vw, -5vh) scale(1.2); }
+  66% { transform: translate(-2vw, 4vh) scale(0.8); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float2 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-6vw, 6vh) scale(1.3); }
+  66% { transform: translate(4vw, -4vh) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0%;
+  left: 10%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(168,85,247,0.03) 0%, transparent 60%);
+  border-radius: 50%;
+  animation: float1 20s ease-in-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0%;
+  right: 10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(74,222,128,0.03) 0%, transparent 60%);
+  border-radius: 50%;
+  animation: float2 25s ease-in-out infinite reverse;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* FinTech Soft Panels -> Marketplace Black Panels */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 8px 32px rgba(0,0,0,0.5);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel:hover {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(15, 15, 15, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 12px 48px rgba(0,0,0,0.6);
+  transform: translateY(-2px);
+}
+
+.glass-header {
+  background: #08080f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-input {
+  background: #0d0d14;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+.glass-input:focus {
+  background: #151522;
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(168, 85, 247, 0.5);
+}
+
+/* Pill Segments */
+.pill-segment-container {
+  background: #161522;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+.pill-segment {
+  border-radius: 9999px;
+  padding: 6px 16px;
+  color: #8c8f9e;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.pill-segment.active {
+  background: linear-gradient(180deg, #2a2940 0%, #1e1d30 100%);
+  color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.pill-segment:not(.active):hover {
+  color: #e2e8f0;
+}
+
+/* Prism.js basic theme override for dark mode */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e2e8f0;
+  background: none;
+  font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  text-shadow: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6b7280;
+}
+
+.token.punctuation {
+  color: #9ca3af;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #10b981; /* Emerald for numbers/bools */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #eab308; /* Yellow for strings */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #00d2ff;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #00d2ff; /* Cyan for keywords */
+}
+
+.token.function,
+.token.class-name {
+  color: #e2e8f0;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #f59e0b;
+}
+
+/* Hide scrollbar completely but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Typography Enhancements */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a0a5b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
