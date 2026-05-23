@@ -50,25 +50,4 @@
 - **Database**: `MongoDB Atlas` (Cloud NoSQL)
 - **Deployment**: `Vercel` (Frontend Edge Network), `Render` (Backend Web Service)
 
-## 🛠️ Local Development
 
-### Prerequisites
-- [Rust](https://rustup.rs/) (latest stable)
-- [Node.js](https://nodejs.org/) (v18+)
-- A MongoDB Atlas cluster
-
-### 1. Start the Backend (Rust)
-```bash
-cd backend
-# Create a .env file with MONGODB_URI and ADMIN_PASSWORD
-cargo run
-```
-*The backend will launch on `http://0.0.0.0:8080`.*
-
-### 2. Start the Frontend (React)
-```bash
-cd frontend
-npm install
-npm run dev
-```
-*The frontend will launch locally on `http://localhost:5173`. Ensure your `.env` contains `VITE_API_URL` pointing to your backend.*
