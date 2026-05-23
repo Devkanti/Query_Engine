@@ -26,13 +26,13 @@
 
 | Landing Page | Company Dashboard |
 |:---:|:---:|
-| <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/3d023aa3-a61e-4bc1-9cc8-05f26feb17ee" /> | <img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/90e0e4be-c220-4aa4-b015-c6f6576e0cbf" /> |
+| <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/3d023aa3-a61e-4bc1-9cc8-05f26feb17ee" /> | 
+<img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/90e0e4be-c220-4aa4-b015-c6f6576e0cbf" /> |
 
-| The Query Engine | Admin "God Mode" |
+| The Query Engine | Performance |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/800x450/050505/00d2ff?text=Add+Query+Engine+Screenshot" width="100%" /> | <img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/90e0e4be-c220-4aa4-b015-c6f6576e0cbf" /> |
-
-*Note: You can easily replace the placeholder images above by uploading real screenshots of your Vercel deployment to GitHub.*
+| <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/c630cd39-36d6-4a6e-a06d-eed807d4e102" />| 
+<img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/c3397ca4-c056-4d51-a8aa-0b4d33877267" /> |
 
 ---
 
