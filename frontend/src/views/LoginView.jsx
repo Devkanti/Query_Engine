@@ -108,9 +108,9 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
             key={activeTab}
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="flex items-center justify-center mb-4"
+            className="flex items-center justify-center mb-6"
           >
-            <img src="/logo-full.png" alt="Query Engine" className="h-32 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+            <img src="/logo-full.png" alt="Query Engine" className="h-24 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
           </motion.div>
           <p className="text-sm text-gray-500 mt-2">Sign in to your account</p>
         </div>
