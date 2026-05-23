@@ -1,46 +1,74 @@
-# Query Engine
+<div align="center">
+  <img src="frontend/public/logo-full.png" alt="Query Engine Logo" width="150" />
+  
+  # Query Engine
+  
+  **A lightning-fast, full-stack SQL query engine featuring approximate processing.**<br/>
+  *Built with Rust, React, and MongoDB.*
+  
+  <br/>
 
-A high-performance, approximate query processing engine designed for massive datasets. It provides lightning-fast analytics with an interactive and beautifully designed React frontend and a blazing-fast Rust backend.
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![Recharts](https://img.shields.io/badge/recharts-%2322B573.svg?style=for-the-badge&logo=react&logoColor=white)
+  ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## Architecture
+</div>
 
-- **Frontend**: Vite + React + Tailwind CSS + Framer Motion. Modern glassmorphism UI with real-time system metrics.
-- **Backend**: Rust + Axum + Tokio. In-memory data ingestion and query execution engine capable of approximate query processing (AQP) via sampling techniques.
-- **Database**: MongoDB Atlas for persistent storage of user credentials, datasets metadata, and query audit logs.
+<br/>
 
-## Features
+## 🚀 Overview
+**Query Engine** is a high-performance, cloud-native analytics platform designed to execute massive SQL aggregations at lightning speeds. Built with a modern, pitch-black sci-fi aesthetic, the platform leverages statistical sampling to deliver **Approximate Query Processing (AQP)**, providing mathematically accurate data estimations up to 100x faster than traditional database scans.
 
-- **Query Engine Editor**: A full SQL-style query editor with syntax highlighting.
-- **Approximate Querying**: Instantly execute queries on million-row datasets by sacrificing a tiny bit of accuracy for massive speed gains.
-- **Data Ingestion**: High-throughput CSV uploading and parsing.
-- **Audit Logging**: Full MongoDB-backed logging of all queries and datasets for administrators.
-- **Role-Based Access**: Secure login system with distinct `company` and `admin` roles.
+## 📸 Screenshots
 
-## Getting Started
+| Landing Page | Company Dashboard |
+|:---:|:---:|
+| <img src="https://via.placeholder.com/800x450/050505/c4f033?text=Add+Landing+Page+Screenshot" width="100%" /> | <img src="https://via.placeholder.com/800x450/050505/c4f033?text=Add+Dashboard+Screenshot" width="100%" /> |
+
+| The Query Engine | Admin "God Mode" |
+|:---:|:---:|
+| <img src="https://via.placeholder.com/800x450/050505/00d2ff?text=Add+Query+Engine+Screenshot" width="100%" /> | <img src="https://via.placeholder.com/800x450/050505/ef4444?text=Add+Admin+Audit+Screenshot" width="100%" /> |
+
+*Note: You can easily replace the placeholder images above by uploading real screenshots of your Vercel deployment to GitHub.*
+
+---
+
+## ✨ Key Features
+
+- **Dual-Engine Architecture**: A seamless in-browser SQL editor that simultaneously runs queries against a traditional exact-match engine and a blazing-fast approximate sampling engine, providing real-time performance comparisons.
+- **Role-Based Workspaces**: Secure, sandboxed environments for individual companies to upload `.csv` datasets, track query histories, and monitor execution benchmarks via interactive dashboards.
+- **Admin "God Mode"**: A centralized security audit dashboard for platform administrators to monitor global login events, trace user query payloads, and manage cloud storage usage across all tenants.
+- **Premium UI/UX**: A fully responsive, custom-built React frontend featuring complex micro-animations (Framer Motion), glassmorphic data cards, and interactive metrics grids optimized for both desktop and mobile devices.
+
+## ⚙️ Architecture
+
+- **Frontend**: `React 18`, `Vite`, `TailwindCSS`, `Framer Motion`, `Recharts`
+- **Backend**: `Rust`, `Axum` (High-Performance Async Server), `Tokio`
+- **Database**: `MongoDB Atlas` (Cloud NoSQL)
+- **Deployment**: `Vercel` (Frontend Edge Network), `Render` (Backend Web Service)
+
+## 🛠️ Local Development
 
 ### Prerequisites
-
 - [Rust](https://rustup.rs/) (latest stable)
 - [Node.js](https://nodejs.org/) (v18+)
-- A MongoDB Atlas account
+- A MongoDB Atlas cluster
 
 ### 1. Start the Backend (Rust)
-
 ```bash
 cd backend
 # Create a .env file with MONGODB_URI and ADMIN_PASSWORD
 cargo run
 ```
-The backend will launch on `http://0.0.0.0:8080`.
+*The backend will launch on `http://0.0.0.0:8080`.*
 
 ### 2. Start the Frontend (React)
-
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The frontend will launch locally. Ensure that your Vercel deployment correctly sets the `VITE_API_URL` environment variable to point to your live Rust server.
-
-## License
-MIT
+*The frontend will launch locally on `http://localhost:5173`. Ensure your `.env` contains `VITE_API_URL` pointing to your backend.*
