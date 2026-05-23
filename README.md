@@ -30,7 +30,7 @@
 
 | The Query Engine | Admin "God Mode" |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/800x450/050505/00d2ff?text=Add+Query+Engine+Screenshot" width="100%" /> | <img src="https://via.placeholder.com/800x450/050505/ef4444?text=Add+Admin+Audit+Screenshot" width="100%" /> |
+| <img src="https://via.placeholder.com/800x450/050505/00d2ff?text=Add+Query+Engine+Screenshot" width="100%" /> | <img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/90e0e4be-c220-4aa4-b015-c6f6576e0cbf" /> |
 
 *Note: You can easily replace the placeholder images above by uploading real screenshots of your Vercel deployment to GitHub.*
 
