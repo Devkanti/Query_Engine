@@ -23,7 +23,7 @@ const MainLayout = ({ role }) => {
  />
 
  {/* Sidebar */}
- <div className="relative z-10 flex h-full">
+ <div className="relative z-50 flex h-full">
  <Sidebar role={role} isOpen={isSidebarOpen} toggleSidebar={() => setIsSidebarOpen(false)} />
  </div>
 
