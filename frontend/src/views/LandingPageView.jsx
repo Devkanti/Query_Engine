@@ -30,16 +30,16 @@ const LandingPageView = () => {
  </div>
  </div>
 
- <div className="flex items-center gap-6">
- <button onClick={() => navigate('/login')} className="text-sm font-medium hover:text-gray-300 transition-colors">Log In</button>
- <button onClick={() => navigate('/login')} className="px-6 py-2.5 rounded-full border border-[#333] text-sm font-medium hover:bg-white/5 transition-colors">
+ <div className="flex items-center gap-4 lg:gap-6">
+ <button onClick={() => navigate('/login')} className="hidden sm:block text-sm font-medium hover:text-gray-300 transition-colors">Log In</button>
+ <button onClick={() => navigate('/login')} className="px-5 py-2 lg:px-6 lg:py-2.5 rounded-full border border-[#333] text-sm font-medium hover:bg-white/5 transition-colors">
  Sign Up
  </button>
  </div>
  </nav>
 
  {/* Main Content Area */}
- <main className="flex-1 flex flex-col lg:flex-row items-center justify-between max-w-[1400px] mx-auto w-full px-8 py-12 gap-16 relative z-10">
+ <main className="flex-1 flex flex-col lg:flex-row items-center justify-between max-w-[1400px] mx-auto w-full px-6 py-8 lg:px-8 lg:py-12 gap-10 lg:gap-16 relative z-10">
  
  {/* Left Side: Copy */}
  <div className="flex-1 w-full lg:max-w-[650px] shrink-0">
@@ -47,7 +47,7 @@ const LandingPageView = () => {
  initial={{ opacity: 0, y: 20 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.6 }}
- className="text-[48px] lg:text-[68px] font-medium leading-[1.1] tracking-tight mb-8"
+ className="text-4xl md:text-[48px] lg:text-[68px] font-medium leading-[1.1] tracking-tight mb-6 lg:mb-8 text-center lg:text-left"
  >
  Fostering <span className="text-[#eab308]">Confidence</span><br/>
  and <span className="text-[#eab308]">Clarity</span> within the<br/>
@@ -58,7 +58,7 @@ const LandingPageView = () => {
  initial={{ opacity: 0, y: 20 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.6, delay: 0.2 }}
- className="text-gray-400 text-lg lg:text-xl mb-12 max-w-lg leading-relaxed"
+ className="text-gray-400 text-base lg:text-xl mb-10 max-w-lg leading-relaxed text-center lg:text-left mx-auto lg:mx-0"
  >
  Acquire premium NFTs from leading creators and contribute to the expansion of the NFT ecosystem
  </motion.p>
@@ -67,20 +67,20 @@ const LandingPageView = () => {
  initial={{ opacity: 0, y: 20 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.6, delay: 0.4 }}
- className="flex items-center gap-6"
+ className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6"
  >
  <motion.button 
  whileHover={{ scale: 1.02, backgroundColor:"#d4ed31" }}
  whileTap={{ scale: 0.98 }}
  onClick={() => navigate('/login')}
- className="bg-[#c4f033] text-black px-10 py-4 rounded-[18px] font-bold text-lg transition-colors"
+ className="w-full sm:w-auto bg-[#c4f033] text-black px-8 py-3.5 sm:px-10 sm:py-4 rounded-[18px] font-bold text-base sm:text-lg transition-colors"
  >
  Start Collecting
  </motion.button>
  <motion.button 
  whileHover={{ scale: 1.02, backgroundColor:"rgba(255,255,255,0.05)" }}
  whileTap={{ scale: 0.98 }}
- className="px-10 py-4 rounded-[18px] border border-white/20 text-gray-300 font-medium text-lg transition-colors"
+ className="w-full sm:w-auto px-8 py-3.5 sm:px-10 sm:py-4 rounded-[18px] border border-white/20 text-gray-300 font-medium text-base sm:text-lg transition-colors"
  >
  Learn How
  </motion.button>

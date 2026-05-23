@@ -30,7 +30,7 @@ const MainLayout = ({ role }) => {
  {/* Main Content Area */}
  <div className="relative z-10 flex-1 flex flex-col min-w-0 bg-transparent">
  <TopNav role={role} toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
- <main className="flex-1 overflow-auto p-8 bg-transparent">
+ <main className="flex-1 overflow-auto p-4 md:p-8 bg-transparent">
  <div className="max-w-7xl mx-auto h-full">
  <Outlet />
  </div>

@@ -70,10 +70,10 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
     <div className="flex h-screen bg-[#030303] items-center justify-center font-sans overflow-hidden relative">
 
       {/* Admin Toggle (Top Right) */}
-      <div className="absolute top-8 right-8 z-50">
+      <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
         <button
           onClick={() => switchTab(activeTab === 'admin' ? 'company' : 'admin')}
-          className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-500/5 border border-red-500/20 hover:bg-red-500/10 transition-colors text-sm font-bold text-red-500 hover:text-red-400 backdrop-blur-md shadow-[0_0_15px_rgba(239,68,68,0.15)]"
+          className="flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-red-500/5 border border-red-500/20 hover:bg-red-500/10 transition-colors text-xs md:text-sm font-bold text-red-500 hover:text-red-400 backdrop-blur-md shadow-[0_0_15px_rgba(239,68,68,0.15)]"
         >
           {activeTab === 'admin' ? 'Company Login' : 'Admin'}
         </button>
@@ -96,29 +96,29 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-[420px] mx-4 md:mx-0 bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[24px] shadow-[0_0_80px_rgba(0,0,0,0.8)] relative flex flex-col overflow-hidden"
+        className="w-full max-w-[420px] mx-4 sm:mx-auto bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[24px] shadow-[0_0_80px_rgba(0,0,0,0.8)] relative flex flex-col overflow-hidden"
       >
 
         {/* Subtle Top Highlight */}
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
         {/* Header Section */}
-        <div className="pt-12 pb-6 px-10 text-center relative z-10 flex flex-col items-center">
+        <div className="pt-8 pb-4 md:pt-12 md:pb-6 px-6 md:px-10 text-center relative z-10 flex flex-col items-center">
           <motion.div
             key={activeTab}
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="flex items-center justify-center mb-6"
+            className="flex items-center justify-center mb-4 md:mb-6"
           >
-            <img src="/logo-full.png" alt="Query Engine" className="h-24 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+            <img src="/logo-full.png" alt="Query Engine" className="h-16 md:h-24 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
           </motion.div>
-          <p className="text-sm text-gray-500 mt-2">Sign in to your account</p>
+          <p className="text-xs md:text-sm text-gray-500 mt-1 md:mt-2">Sign in to your account</p>
         </div>
 
         {/* Removed Tab Toggle */}
 
         {/* Form Container */}
-        <div className="p-10 relative z-10">
+        <div className="p-6 md:p-10 relative z-10">
           <AnimatePresence mode="wait">
             <motion.form
               key={activeTab + isRegistering}
