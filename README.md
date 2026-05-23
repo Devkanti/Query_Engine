@@ -26,7 +26,7 @@
 
 | Landing Page | Company Dashboard |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/800x450/050505/c4f033?text=Add+Landing+Page+Screenshot" width="100%" /> | <img src="https://via.placeholder.com/800x450/050505/c4f033?text=Add+Dashboard+Screenshot" width="100%" /> |
+| <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/3d023aa3-a61e-4bc1-9cc8-05f26feb17ee" /> | <img src="https://via.placeholder.com/800x450/050505/c4f033?text=Add+Dashboard+Screenshot" width="100%" /> |
 
 | The Query Engine | Admin "God Mode" |
 |:---:|:---:|
