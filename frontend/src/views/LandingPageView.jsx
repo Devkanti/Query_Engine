@@ -17,13 +17,8 @@ const LandingPageView = () => {
  <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto w-full relative z-10">
  <div className="flex items-center gap-12">
  {/* Logo */}
- <div className="flex items-center gap-2 cursor-pointer">
- <div className="w-8 h-8 relative flex items-center justify-center">
- <div className="absolute w-3 h-3 bg-[#eab308] rounded-full top-0"></div>
- <div className="absolute w-3 h-3 bg-[#eab308] rounded-full bottom-1 left-0"></div>
- <div className="absolute w-3 h-3 bg-[#eab308] rounded-full bottom-1 right-0"></div>
- <div className="absolute w-4 h-4 bg-[#eab308] rounded-full"></div>
- </div>
+ <div className="flex items-center gap-2 cursor-pointer bg-white px-3 py-1.5 rounded-xl shadow-lg">
+    <img src="/logo-full.png" alt="Query Engine" className="h-8 w-auto object-contain" />
  </div>
  
  {/* Links */}

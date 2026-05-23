@@ -104,17 +104,14 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
         {/* Header Section */}
         <div className="pt-12 pb-6 px-10 text-center relative z-10 flex flex-col items-center">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-white/10 to-transparent border border-white/10 flex items-center justify-center mb-6 shadow-lg backdrop-blur-md">
-            <Layers size={26} className="text-white" />
-          </div>
-          <motion.h1
+          <motion.div
             key={activeTab}
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="text-2xl font-semibold tracking-tight text-white"
+            className="bg-white p-4 rounded-3xl flex items-center justify-center mb-2 shadow-lg"
           >
-            Query Engine
-          </motion.h1>
+            <img src="/logo-full.png" alt="Query Engine" className="h-24 w-auto object-contain" />
+          </motion.div>
           <p className="text-sm text-gray-500 mt-2">Sign in to your account</p>
         </div>
 

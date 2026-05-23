@@ -28,11 +28,11 @@ const Sidebar = ({ role, isOpen, toggleSidebar }) => {
     )}
     <div className={`transition-all duration-300 flex flex-col justify-between text-sm flex-shrink-0 bg-black/95 md:bg-transparent border-r border-white/5 absolute md:relative z-50 h-full ${isOpen ? 'w-64 opacity-100 left-0' : 'w-0 opacity-0 overflow-hidden border-none -left-64 md:left-0'}`}>
  <div className="w-64">
- <div className="p-6 pb-4 flex items-center justify-between">
- <div>
- <h1 className="text-2xl font-medium text-white tracking-tight">Query Engine</h1>
- <p className="text-[11px] text-[#eab308] font-bold mt-1">{role === 'admin' ? 'SYSTEM ADMIN' : 'ANALYTICS ENGINE'}</p>
- </div>
+ <div className="p-6 pb-4">
+    <div className="bg-white p-3 rounded-2xl flex items-center justify-center shadow-lg">
+      <img src="/logo-full.png" alt="Query Engine" className="h-16 w-auto object-contain" />
+    </div>
+    <p className="text-[11px] text-[#eab308] font-bold mt-3 text-center">{role === 'admin' ? 'SYSTEM ADMIN' : 'ANALYTICS ENGINE'}</p>
  </div>
 
 
