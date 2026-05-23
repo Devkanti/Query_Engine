@@ -56,20 +56,20 @@ const UserAuditView = () => {
  <div className="glass-panel rounded-2xl flex flex-col overflow-hidden shadow-2xl border-t border-t-white/10 relative">
  <div className="absolute top-0 right-0 w-96 h-96 bg-[#eab308]/5 rounded-full blur-[100px] pointer-events-none"></div>
 
- <div className="h-20 border-b border-white/10 flex items-center justify-between px-8 bg-[#0a0a0a]/50">
+ <div className="h-auto py-4 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between px-8 bg-[#0a0a0a]/50 gap-4">
  <div className="flex items-center gap-3">
  <div className="w-2 h-2 rounded-full bg-[#eab308] shadow-[0_0_10px_#eab308]"></div>
  <h2 className="text-[11px] font-bold text-gray-300 tracking-[0.2em]">Authentication Events</h2>
  </div>
  
- <div className="relative group z-10">
+ <div className="relative group z-10 w-full md:w-auto">
  <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-[#eab308] transition-colors" size={14} />
  <input 
  type="text" 
  value={searchTerm}
  onChange={(e) => setSearchTerm(e.target.value)}
  placeholder="Filter by Company..." 
- className="bg-black/50 border border-white/10 rounded-lg pl-9 pr-4 py-2.5 w-72 text-xs text-white placeholder-gray-600 focus:outline-none focus:border-[#eab308]/50 focus:bg-[#eab308]/5 transition-all shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]"
+ className="bg-black/50 border border-white/10 rounded-lg pl-9 pr-4 py-2.5 w-full md:w-72 text-xs text-white placeholder-gray-600 focus:outline-none focus:border-[#eab308]/50 focus:bg-[#eab308]/5 transition-all shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]"
  />
  </div>
  </div>

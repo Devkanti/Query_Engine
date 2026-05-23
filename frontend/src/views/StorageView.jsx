@@ -105,17 +105,17 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <div className="glass-panel rounded-2xl flex flex-col relative overflow-hidden shadow-2xl border-t border-t-white/10">
  <div className="absolute top-0 right-0 w-96 h-96 bg-[#c4f033]/5 rounded-full blur-[100px] pointer-events-none"></div>
  
- <div className="h-16 border-b border-white/10 flex items-center justify-between px-8 bg-[#0a0a0a]/50">
+ <div className="h-auto py-4 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between px-8 bg-[#0a0a0a]/50 gap-4">
  <div className="flex items-center gap-3">
  <div className="w-2 h-2 rounded-full bg-[#c4f033] shadow-[0_0_10px_#c4f033]"></div>
  <h3 className="text-sm text-gray-300 font-bold tracking-[0.2em]">Active Datasets</h3>
  </div>
- <div className="relative group">
+ <div className="relative group w-full md:w-auto">
  <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-[#c4f033] transition-colors" size={14} />
  <input 
  type="text" 
  placeholder="Filter datasets..." 
- className="bg-black/50 border border-white/10 rounded-lg pl-9 pr-4 py-2 w-72 text-xs text-white placeholder-gray-600 focus:outline-none focus:border-[#c4f033]/50 focus:bg-[#c4f033]/5 transition-all shadow-inner"
+ className="bg-black/50 border border-white/10 rounded-lg pl-9 pr-4 py-2 w-full md:w-72 text-xs text-white placeholder-gray-600 focus:outline-none focus:border-[#c4f033]/50 focus:bg-[#c4f033]/5 transition-all shadow-inner"
  />
  </div>
  </div>

@@ -86,7 +86,7 @@ const PerformanceView = () => {
  >
  
  {/* Header */}
- <div className="flex justify-between items-end border-b border-white/10 pb-6 mt-4">
+ <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 border-b border-white/10 pb-6 mt-4">
  <div>
  <div className="flex items-center gap-3 mb-2">
  <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
@@ -186,7 +186,7 @@ const PerformanceView = () => {
  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[9px] text-gray-500 font-bold">
  Approximation Accuracy (%)
  </div>
- <div className="absolute top-1/2 -left-4 -rotate-90 text-[9px] text-gray-500 font-bold origin-center -translate-y-1/2">
+ <div className="absolute top-1/2 -left-2 md:-left-4 -rotate-90 text-[9px] text-gray-500 font-bold origin-center -translate-y-1/2 whitespace-nowrap">
  Operations per Second
  </div>
  </div>

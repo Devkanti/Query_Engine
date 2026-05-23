@@ -267,7 +267,8 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <h3 className="text-xs font-bold text-gray-300 tracking-[0.2em]">Recent Queries</h3>
  </div>
  </div>
- <div className="p-0 overflow-y-auto flex-1">
+ <div className="p-0 overflow-auto flex-1">
+ <div className="overflow-x-auto">
  <table className="w-full text-left text-xs text-gray-400">
  <tbody className="divide-y divide-white/5">
  {queryHistory.length === 0 ? (
@@ -285,6 +286,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  ))}
  </tbody>
  </table>
+ </div>
  </div>
  </div>
 
