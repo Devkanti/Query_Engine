@@ -11,6 +11,7 @@ import AdminDashboardView from './views/AdminDashboardView';
 import UserAuditView from './views/UserAuditView';
 import StorageView from './views/StorageView';
 import LoginView from './views/LoginView';
+import LandingPageView from './views/LandingPageView';
 import axios from 'axios';
 
 axios.interceptors.request.use(config => {
@@ -71,15 +72,15 @@ function App() {
  <Router>
  <Routes>
  {/* Public Routes */}
+ <Route path="/" element={<LandingPageView />} />
  <Route path="/login" element={<LoginView />} />
  
  {/* Company Routes */}
- <Route path="/" element={<CompanyRoute><MainLayout role="company" /></CompanyRoute>}>
- <Route index element={<Navigate to="dashboard" replace />} />
- <Route path="dashboard" element={<DashboardView />} />
- <Route path="query" element={<QueryEngineView />} />
- <Route path="performance" element={<PerformanceView />} />
- <Route path="storage" element={<StorageView />} />
+ <Route element={<CompanyRoute><MainLayout role="company" /></CompanyRoute>}>
+ <Route path="/dashboard" element={<DashboardView />} />
+ <Route path="/query" element={<QueryEngineView />} />
+ <Route path="/performance" element={<PerformanceView />} />
+ <Route path="/storage" element={<StorageView />} />
  </Route>
 
  {/* Admin Routes */}
