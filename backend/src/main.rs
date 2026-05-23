@@ -137,6 +137,7 @@ async fn main() {
     let cors = CorsLayer::permissive();
 
     let app = Router::new()
+        .route("/", get(|| async { "OK" }))
         .route("/ingest", post(ingest_handler))
         .route("/query", post(query_handler))
         .route("/generate", post(generate_handler))
@@ -153,17 +154,18 @@ async fn main() {
         .layer(DefaultBodyLimit::disable())
         .with_state(state);
 
-    let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();
+    let port = env::var("PORT").unwrap_or_else(|_| "8080".to_string());
+    let listener = tokio::net::TcpListener::bind(format!("0.0.0.0:{}", port)).await.unwrap();
     println!(r#"
   /===============================================================\
   |   Q U E R Y   E N G I N E                                     |
   |   High-Performance Approximate Query Processing Server        |
   |                                                               |
   |   Status:  ONLINE                                             |
-  |   Port:    8080                                               |
+  |   Port:    {}                                               |
   \===============================================================/
-"#);
-    info!("Query Engine Core initialized and listening on 0.0.0.0:8080");
+"#, port);
+    info!("Query Engine Core initialized and listening on 0.0.0.0:{}", port);
     axum::serve(listener, app).await.unwrap();
 }
 
