@@ -8,7 +8,7 @@
   
   <br/>
 
- [![View Website](https://img.shields.io/badge/VIEW%20WEBSITE-c4f033?style=for-the-badge&labelColor=c4f033&color=c4f033)](https://queryengine.vercel.app/)
+ [![View Website](https://img.shields.io/badge/VIEW%20WEBSITE-c4f033?style=for-the-badge&labelColor=c4f033&color=c4f033)](https://queryen.vercel.app/)
 
  <br/>
 
