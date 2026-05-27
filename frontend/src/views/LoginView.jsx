@@ -67,7 +67,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
   };
 
   return (
-    <div className="flex h-screen bg-[#030303] items-center justify-center font-sans overflow-hidden relative">
+    <div className="flex flex-col h-screen bg-[#030303] items-center justify-center font-sans overflow-hidden relative">
 
       {/* Admin Toggle (Top Right) */}
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
@@ -196,7 +196,22 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
           </AnimatePresence>
         </div>
       </motion.div>
-    </div>
+
+ {/* Made By Badge */}
+ <a 
+ href="https://devkantisarkar.vercel.app/" 
+ target="_blank" 
+ rel="noopener noreferrer"
+ className="mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors backdrop-blur-md shadow-2xl z-50 group cursor-pointer"
+ >
+ <span className="text-xs text-gray-400 font-medium group-hover:text-white transition-colors">Made by</span>
+ <img 
+ src="https://github.com/Devkanti.png" 
+ alt="Devkanti Sarkar" 
+ className="w-8 h-8 rounded-full border border-white/20 group-hover:border-white/50 transition-colors object-cover"
+ />
+ </a>
+ </div>
   );
 };
 
