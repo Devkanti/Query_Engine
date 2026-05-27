@@ -202,14 +202,17 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  href="https://devkantisarkar.vercel.app/" 
  target="_blank" 
  rel="noopener noreferrer"
- className="mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors backdrop-blur-md shadow-2xl z-50 group cursor-pointer"
+ className="mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 flex items-center gap-3 px-2 py-2 pr-6 rounded-full bg-[#112220] border border-[#1b3633] hover:bg-[#162c2a] transition-colors shadow-2xl z-50 group cursor-pointer"
  >
- <span className="text-xs text-gray-400 font-medium group-hover:text-white transition-colors">Made by</span>
  <img 
  src="https://github.com/Devkanti.png" 
  alt="Devkanti Sarkar" 
- className="w-8 h-8 rounded-full border border-white/20 group-hover:border-white/50 transition-colors object-cover"
+ className="w-10 h-10 rounded-full border-2 border-[#a7f3d0]/80 object-cover group-hover:scale-105 transition-transform"
  />
+ <div className="flex flex-col justify-center text-left">
+ <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.15em] leading-tight mb-[2px]">Developed By</span>
+ <span className="text-[13px] text-white font-bold leading-tight tracking-tight">Devkanti Sarkar</span>
+ </div>
  </a>
  </div>
   );
