@@ -198,12 +198,28 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
       </motion.div>
 
  {/* Made By Badge */}
- <a 
- href="https://devkantisarkar.vercel.app/" 
- target="_blank" 
- rel="noopener noreferrer"
- className="mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 flex items-center gap-3 px-2 py-2 pr-6 rounded-full bg-[#112220] border border-[#1b3633] hover:bg-[#162c2a] transition-colors shadow-2xl z-50 group cursor-pointer"
- >
+ <div className="relative mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 z-50 group">
+ {/* Expandable Team List */}
+ <div className="absolute bottom-full right-0 mb-3 w-52 bg-[#0a1413]/95 backdrop-blur-xl border border-[#1b3633] rounded-2xl p-4 shadow-[0_0_30px_rgba(0,0,0,0.8)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-50">
+ <span className="block text-[9px] text-gray-400 font-bold uppercase tracking-[0.15em] leading-tight mb-3 border-b border-white/10 pb-2">Project Team</span>
+ <div className="flex flex-col gap-3 text-[13px] text-gray-300 font-medium">
+ <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors group/link">
+ <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-6 h-6 rounded-full object-cover border border-[#a7f3d0]/50 group-hover/link:border-[#a7f3d0] transition-colors" />
+ <span className="hover:underline decoration-[#a7f3d0]/50 underline-offset-2 text-white">Devkanti Sarkar</span>
+ </a>
+ <div className="flex items-center gap-3">
+ <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] text-white font-bold">M</div>
+ <span>Mohar Gorai</span>
+ </div>
+ <div className="flex items-center gap-3">
+ <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] text-white font-bold">A</div>
+ <span>Agrima Gupta</span>
+ </div>
+ </div>
+ </div>
+
+ {/* The Main Pill */}
+ <div className="flex items-center gap-3 px-2 py-2 pr-6 rounded-full bg-[#112220] border border-[#1b3633] group-hover:bg-[#162c2a] transition-colors shadow-2xl cursor-default relative">
  <img 
  src="https://github.com/Devkanti.png" 
  alt="Devkanti Sarkar" 
@@ -211,9 +227,12 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  />
  <div className="flex flex-col justify-center text-left">
  <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.15em] leading-tight mb-[2px]">Developed By</span>
- <span className="text-[13px] text-white font-bold leading-tight tracking-tight">Devkanti Sarkar</span>
- </div>
+ <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white font-bold leading-tight tracking-tight hover:text-[#a7f3d0] transition-colors">
+ Devkanti Sarkar
  </a>
+ </div>
+ </div>
+ </div>
  </div>
   );
 };
