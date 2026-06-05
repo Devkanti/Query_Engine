@@ -73,9 +73,9 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
         <button
           onClick={() => switchTab(activeTab === 'admin' ? 'company' : 'admin')}
-          className="flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-red-500/5 border border-red-500/20 hover:bg-red-500/10 transition-colors text-xs md:text-sm font-bold text-red-500 hover:text-red-400 backdrop-blur-md shadow-[0_0_15px_rgba(239,68,68,0.15)]"
+          className="flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-white/[0.02] border border-white/10 hover:bg-white/[0.08] transition-all text-xs md:text-sm font-bold text-gray-400 hover:text-white backdrop-blur-md shadow-2xl"
         >
-          {activeTab === 'admin' ? 'Company Login' : 'Admin'}
+          {activeTab === 'admin' ? 'Company Login' : 'Admin Access'}
         </button>
       </div>
 
