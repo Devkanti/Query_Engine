@@ -199,37 +199,59 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
  {/* Made By Badge */}
  <div className="relative mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 z-50 group">
+   
  {/* Expandable Team List */}
- <div className="absolute bottom-full right-0 mb-3 w-52 bg-[#0a1413]/95 backdrop-blur-xl border border-[#1b3633] rounded-2xl p-4 shadow-[0_0_30px_rgba(0,0,0,0.8)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-50">
- <span className="block text-[9px] text-gray-400 font-bold uppercase tracking-[0.15em] leading-tight mb-3 border-b border-white/10 pb-2">Project Team</span>
- <div className="flex flex-col gap-3 text-[13px] text-gray-300 font-medium">
- <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors group/link">
- <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-6 h-6 rounded-full object-cover border border-[#a7f3d0]/50 group-hover/link:border-[#a7f3d0] transition-colors" />
- <span className="hover:underline decoration-[#a7f3d0]/50 underline-offset-2 text-white">Devkanti Sarkar</span>
- </a>
- <div className="flex items-center gap-3">
- <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] text-white font-bold">M</div>
- <span>Mohar Gorai</span>
+ <div className="absolute bottom-full right-0 mb-4 w-64 bg-[#050b0a]/90 backdrop-blur-2xl border border-[#1b3633] rounded-[24px] p-5 shadow-[0_10px_40px_rgba(0,0,0,0.8)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-400 ease-out z-50">
+ <div className="flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
+ <div className="w-2 h-2 rounded-full bg-[#a7f3d0] shadow-[0_0_10px_#a7f3d0]"></div>
+ <span className="text-[10px] text-gray-300 font-bold uppercase tracking-[0.2em]">Project Team</span>
  </div>
+
+ <div className="flex flex-col gap-1">
+ {/* Devkanti */}
+ <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group/link">
  <div className="flex items-center gap-3">
- <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[10px] text-white font-bold">A</div>
- <span>Agrima Gupta</span>
+ <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-8 h-8 rounded-full object-cover border border-[#a7f3d0]/30 group-hover/link:border-[#a7f3d0] transition-colors" />
+ <div className="flex flex-col">
+ <span className="text-[13px] text-white font-bold group-hover/link:text-[#a7f3d0] transition-colors">Devkanti Sarkar</span>
+ <span className="text-[10px] text-gray-500 font-medium">Lead Developer</span>
+ </div>
+ </div>
+ <svg className="w-4 h-4 text-gray-600 group-hover/link:text-[#a7f3d0] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+ </a>
+
+ {/* Mohar */}
+ <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors cursor-default">
+ <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border border-white/10 flex items-center justify-center text-xs text-white font-bold shadow-inner">M</div>
+ <div className="flex flex-col">
+ <span className="text-[13px] text-gray-200 font-bold">Mohar Gorai</span>
+ <span className="text-[10px] text-gray-500 font-medium">Developer</span>
+ </div>
+ </div>
+
+ {/* Agrima */}
+ <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors cursor-default">
+ <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border border-white/10 flex items-center justify-center text-xs text-white font-bold shadow-inner">A</div>
+ <div className="flex flex-col">
+ <span className="text-[13px] text-gray-200 font-bold">Agrima Gupta</span>
+ <span className="text-[10px] text-gray-500 font-medium">Developer</span>
+ </div>
  </div>
  </div>
  </div>
 
  {/* The Main Pill */}
- <div className="flex items-center gap-3 px-2 py-2 pr-6 rounded-full bg-[#112220] border border-[#1b3633] group-hover:bg-[#162c2a] transition-colors shadow-2xl cursor-default relative">
- <img 
- src="https://github.com/Devkanti.png" 
- alt="Devkanti Sarkar" 
- className="w-10 h-10 rounded-full border-2 border-[#a7f3d0]/80 object-cover group-hover:scale-105 transition-transform"
- />
+ <div className="flex items-center gap-4 px-2 py-2 pr-6 rounded-full bg-[#0a1614] border border-[#1b3633] group-hover:bg-[#0f211e] group-hover:border-[#2a524d] transition-all shadow-2xl cursor-default relative overflow-hidden">
+ {/* Overlapping Avatars */}
+ <div className="flex items-center -space-x-3 ml-1">
+ <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-10 h-10 rounded-full border-2 border-[#0a1614] object-cover relative z-30" />
+ <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-20">M</div>
+ <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-10">A</div>
+ </div>
+ 
  <div className="flex flex-col justify-center text-left">
- <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.15em] leading-tight mb-[2px]">Developed By</span>
- <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white font-bold leading-tight tracking-tight hover:text-[#a7f3d0] transition-colors">
- Devkanti Sarkar
- </a>
+ <span className="text-[9px] text-[#a7f3d0] font-bold uppercase tracking-[0.2em] leading-tight mb-[2px]">Developed By</span>
+ <span className="text-[13px] text-white font-bold leading-tight tracking-wide">Project Team</span>
  </div>
  </div>
  </div>
