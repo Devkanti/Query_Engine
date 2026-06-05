@@ -209,13 +209,22 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  </div>
 
  <div className="flex flex-col gap-1">
+ {/* Agrima */}
+ <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors cursor-default">
+ <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border border-white/10 flex items-center justify-center text-xs text-white font-bold shadow-inner">A</div>
+ <div className="flex flex-col">
+ <span className="text-[13px] text-gray-200 font-bold">Agrima Gupta</span>
+ <span className="text-[10px] text-gray-500 font-medium">Lead Developer</span>
+ </div>
+ </div>
+
  {/* Devkanti */}
  <a href="https://devkantisarkar.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-colors group/link">
  <div className="flex items-center gap-3">
  <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-8 h-8 rounded-full object-cover border border-[#a7f3d0]/30 group-hover/link:border-[#a7f3d0] transition-colors" />
  <div className="flex flex-col">
  <span className="text-[13px] text-white font-bold group-hover/link:text-[#a7f3d0] transition-colors">Devkanti Sarkar</span>
- <span className="text-[10px] text-gray-500 font-medium">Lead Developer</span>
+ <span className="text-[10px] text-gray-500 font-medium">Backend Developer</span>
  </div>
  </div>
  <svg className="w-4 h-4 text-gray-600 group-hover/link:text-[#a7f3d0] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
@@ -226,16 +235,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border border-white/10 flex items-center justify-center text-xs text-white font-bold shadow-inner">M</div>
  <div className="flex flex-col">
  <span className="text-[13px] text-gray-200 font-bold">Mohar Gorai</span>
- <span className="text-[10px] text-gray-500 font-medium">Developer</span>
- </div>
- </div>
-
- {/* Agrima */}
- <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors cursor-default">
- <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border border-white/10 flex items-center justify-center text-xs text-white font-bold shadow-inner">A</div>
- <div className="flex flex-col">
- <span className="text-[13px] text-gray-200 font-bold">Agrima Gupta</span>
- <span className="text-[10px] text-gray-500 font-medium">Developer</span>
+ <span className="text-[10px] text-gray-500 font-medium">Frontend Developer</span>
  </div>
  </div>
  </div>
@@ -246,9 +246,9 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <div className="flex items-center gap-4 px-2 py-2 pr-6 rounded-full bg-[#0a1614] border border-[#1b3633] group-hover:bg-[#0f211e] group-hover:border-[#2a524d] transition-all shadow-2xl cursor-default relative overflow-hidden">
  {/* Overlapping Avatars */}
  <div className="flex items-center -space-x-3 ml-1">
- <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-10 h-10 rounded-full border-2 border-[#0a1614] object-cover relative z-30" />
- <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-20">M</div>
- <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-10">A</div>
+ <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-30">A</div>
+ <img src="https://github.com/Devkanti.png" alt="Devkanti" className="w-10 h-10 rounded-full border-2 border-[#0a1614] object-cover relative z-20" />
+ <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border-2 border-[#0a1614] flex items-center justify-center text-xs text-white font-bold relative z-10">M</div>
  </div>
  
  <div className="flex flex-col justify-center text-left">
