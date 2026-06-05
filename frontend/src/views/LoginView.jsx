@@ -200,8 +200,9 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  {/* Made By Badge */}
  <div className="relative mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 z-50 group">
    
- {/* Expandable Team List */}
- <div className="absolute bottom-full right-0 mb-4 w-64 bg-[#050b0a]/90 backdrop-blur-2xl border border-[#1b3633] rounded-[24px] p-5 shadow-[0_10px_40px_rgba(0,0,0,0.8)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-400 ease-out z-50">
+ {/* Expandable Team List Wrapper */}
+ <div className="absolute bottom-full right-0 pb-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-400 ease-out z-50">
+ <div className="w-64 bg-[#050b0a]/90 backdrop-blur-2xl border border-[#1b3633] rounded-[24px] p-5 shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
  <div className="flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
  <div className="w-2 h-2 rounded-full bg-[#a7f3d0] shadow-[0_0_10px_#a7f3d0]"></div>
  <span className="text-[10px] text-gray-300 font-bold uppercase tracking-[0.2em]">Project Team</span>
@@ -235,6 +236,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <div className="flex flex-col">
  <span className="text-[13px] text-gray-200 font-bold">Agrima Gupta</span>
  <span className="text-[10px] text-gray-500 font-medium">Developer</span>
+ </div>
  </div>
  </div>
  </div>
