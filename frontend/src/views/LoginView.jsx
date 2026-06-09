@@ -201,8 +201,8 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  <div className="relative mt-8 md:mt-0 md:absolute md:bottom-8 md:right-8 z-50 group">
    
  {/* Expandable Team List Wrapper */}
- <div className="absolute bottom-full right-0 pb-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-400 ease-out z-50">
- <div className="w-64 bg-[#030303]/80 backdrop-blur-2xl border border-white/10 rounded-[24px] p-5 shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
+ <div className="absolute bottom-full left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 pb-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-400 ease-out z-50 w-[280px] md:w-72 max-w-[90vw]">
+ <div className="w-full bg-[#030303]/90 backdrop-blur-3xl border border-white/10 rounded-[24px] p-5 shadow-[0_20px_40px_rgba(0,0,0,0.9)]">
  <div className="flex items-center justify-center mb-4 border-b border-white/10 pb-3">
  <span className="text-[10px] text-gray-300 font-bold uppercase tracking-[0.2em] text-center">Project Team</span>
  </div>
@@ -248,7 +248,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  </div>
 
  {/* The Main Pill */}
- <div className="flex items-center gap-4 px-2 py-2 pr-6 rounded-full bg-white/[0.02] backdrop-blur-3xl border border-white/10 group-hover:bg-white/[0.05] transition-all shadow-2xl cursor-default relative overflow-hidden">
+ <div className="flex items-center gap-4 px-2 py-2 pr-6 rounded-full bg-white/[0.02] backdrop-blur-3xl border border-white/10 group-hover:bg-white/[0.06] active:bg-white/[0.08] transition-all shadow-2xl cursor-pointer relative overflow-hidden">
  {/* Overlapping Avatars */}
  <div className="flex items-center -space-x-3 ml-1">
  <img src="https://github.com/workagrimag186-max.png" alt="Agrima" className="w-10 h-10 rounded-full border-2 border-[#0a0a0a] object-cover relative z-30 bg-[#111]" />
